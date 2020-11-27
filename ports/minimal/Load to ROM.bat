@@ -1,0 +1,1 @@
+.\sunxi-fel -p spiflash-write 0 .\build\firmware.bin
