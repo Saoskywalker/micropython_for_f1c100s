@@ -33,7 +33,7 @@ void do_str(const char *src, mp_parse_input_kind_t input_kind) {
 
 static char *stack_top;
 #if MICROPY_ENABLE_GC
-static char heap[2048];
+static char heap[64*1024];
 #endif
 
 struct uart_t *uart0_16550 = NULL, *uart2_16550 = NULL;

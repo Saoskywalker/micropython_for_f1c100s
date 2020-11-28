@@ -620,7 +620,7 @@
 
 // Whether port requires event-driven REPL functions
 #ifndef MICROPY_REPL_EVENT_DRIVEN
-#define MICROPY_REPL_EVENT_DRIVEN (0)
+#define MICROPY_REPL_EVENT_DRIVEN (1)
 #endif
 
 // Whether to include lexer helper function for unix
