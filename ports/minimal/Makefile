@@ -34,6 +34,8 @@ CFLAGS		:= -g -ggdb -Wall -O3 -ffreestanding -std=c99 $(INC)
 ASFLAGS		:= -g -ggdb -Wall -O3 -ffreestanding -std=gnu99 $(INC)
 LDFLAGS		:= -T f1c100s.ld -nostdlib
 MCFLAGS		:= -march=armv5te -mtune=arm926ej-s -mfloat-abi=soft -marm -mno-thumb-interwork
+# LDFLAGS		+= -Wl,--gc-sections
+# MCFLAGS     += -ffunction-sections -fdata-sections
 else
 LD = gcc
 CFLAGS = -m32 $(INC) -Wall -Werror -Wdouble-promotion -Wfloat-conversion -std=c99 $(COPT)
